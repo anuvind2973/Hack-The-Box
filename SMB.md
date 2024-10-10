@@ -93,6 +93,8 @@ smbclient -L  //10.129.93.7/ -N
 ````
 ![Screenshot from 2024-10-10 22-55-14](https://github.com/user-attachments/assets/da399a5b-0cef-4fe9-916f-10b374d8c11b)
 
+We can see that the “Backups” sharename has open smbshares , lets try to connect to it
+
 ````
 sudo smbclient //10.129.93.7/WorkShares -N
 ````
