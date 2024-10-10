@@ -58,3 +58,52 @@ nmap --script smb-os-discovery.nse 10.129.93.7
 nmap --script smb-enum-shares.nse,smb-enum-users.nse 10.129.93.7
 
 ````
+
+### 02. SMBMAP
+
+SMBMap is a powerful tool that enumerates samba shares. it is capable of listing share drives, share contents, upload/downloads functionality, and even execute remote commands.
+
+We can connect to an IP through SMB using credentials with the following command:
+
+````
+smbmap -u [username] -p [password] -d [domain] -H [ip or hostname]
+````
+
+To list shares:
+
+````
+smbmap -H 10.129.93.7
+
+````
+### 03. SMBCLIENT
+
+SMBclient is a command-line tool that allows users to interact with SMB/CIFS shares. It supports many features, such as ways to connect and manage shared resources on a remote system.
+
+Connecting to a share (The user needs to enter a password):
+
+````
+smbclient //server/share
+````
+
+List shares anonymously:
+
+````
+smbclient -L  //10.129.93.7/ -N
+
+````
+![Screenshot from 2024-10-10 22-55-14](https://github.com/user-attachments/assets/da399a5b-0cef-4fe9-916f-10b374d8c11b)
+
+````
+sudo smbclient //10.129.93.7/WorkShares -N
+````
+![Screenshot from 2024-10-10 22-57-28](https://github.com/user-attachments/assets/76d3c738-34c4-491b-8d87-dbb609fff6a6)
+
+
+NOTE: -N flag indicates that no password is supplied. It suppresses the password prompt and specifies anonymous authentication.
+
+Connect with a username:
+
+````
+smbclient //server/share -U [username]
+````
+
