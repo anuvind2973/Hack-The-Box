@@ -41,3 +41,20 @@ SMB stands for Server Message Block. It is an application layer protocol that is
     * Run via NetBIOS API which in turn can run in several different ways — on UDP ports 137, 138 or TCP ports 139 as we saw earlier in the NetBIOS section.
 
 TLDR: SMB runs on top of NetBIOS over TCP/IP (NBT), however SMB does not rely on NetBIOS for communication. NetBIOS is simply an API that other technologies use and is completely independent from SMB.
+
+## SMB Enumeration:
+
+### 01. NMAP
+
+* Nmap pre defined scripts for SMB Enumeration
+
+````
+ cd /usr/share/nmap/scripts/; ls | grep smb
+````
+* Usage of Nmap SMB script:
+
+````
+nmap --script smb-os-discovery.nse 10.129.93.7
+nmap --script smb-enum-shares.nse,smb-enum-users.nse 10.129.93.7
+
+````
