@@ -7,7 +7,6 @@ Many a times people tend to get a bit confused between these two things. That’
 What is NetBIOS 
 </div>
 
-
 <div style="text-align: justify">
 NetBIOS is an acronym that stands for Network Basic Input Output System. It might seem like a protocol but isn’t one, it is an API that provides session layer services that allow applications on different computers to communicate over the LAN. In modern networks NetBIOS runs over TCP/IP via the NetBIOS over TCP/IP or commonly known as NBT protocol. This results in each computer on the network having a NetBIOS name along with the IP Address corresponding to the host name.
 </div>
@@ -24,7 +23,7 @@ Name service, used for name registration and resolution like DNS. In order to in
 Datagram distribution service, connection-less. Runs on UDP (as you might’ve guessed) port 138. As it is connection-less service, the application is responsible for error detection and data recovery.
 </div>
 
-*NetBIOS-SSN: 
+* NetBIOS-SSN: 
 
 <div style="text-align: justify"> 
 Session service for connection-oriented communications. This service lets two devices establish a connection and also has error detection and recovery unlike datagram distribution service. It runs on TCP port 139.
