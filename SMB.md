@@ -109,3 +109,9 @@ Connect with a username:
 smbclient //server/share -U [username]
 ````
 
+
+Refarances
+
+* [SMB Enumeration and Exploitation in CTFs](https://medium.com/@josegpach/smb-enumeration-and-exploitation-in-ctfs-be6fc147af76)
+* [HackTheBox Writeup — Bastion](https://arkanoidctf.medium.com/hackthebox-writeup-bastion-be95cd1138bc)
+* [Nmap SMB Scripts and SMB Enumeration](https://www.infosecademy.com/nmap-smb-scripts-enumeration/)
