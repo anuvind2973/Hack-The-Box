@@ -1,4 +1,4 @@
-# SMB(Simple Message Block) Exploitation
+# SMB(Server Message Block) Exploitation
 
 ## Difference Between NetBIOS & SMB
 
